@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply m-0 box-border scroll-smooth p-0 font-sans;
+  }
+  body {
+    @apply bg-background;
+  }
+
+  ::selection {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer components {
+  .fluid-container {
+    @apply container mx-auto w-full px-2 py-4 md:px-6 lg:px-16 lg:py-7;
+  }
+  .section-heading {
+    @apply text-left font-heading text-xl font-semibold uppercase md:text-[30px];
+  }
+  .underline-after {
+    @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1.3px] after:w-full after:bg-gray-700 after:content-[''];
+  }
+
+  .section-heading-hand {
+    @apply font-hand text-7xl tracking-wider text-primary max-md:text-center max-[350px]:text-6xl lg:text-8xl;
+  }
+}
+
+.swiper-slide {
+  height: auto !important;
+}
