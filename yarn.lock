@@ -927,7 +927,7 @@ balanced-match@^1.0.0:
     "@types/react" "18.2.18"
     "@types/react-dom" "18.2.7"
     autoprefixer "10.4.14"
-    baongoc-portfolio "file:C:/Users/lengo/AppData/Local/Yarn/Cache/v6/npm-baongoc-portfolio-0.1.0-1fd136a4-4835-4cb1-812a-d9bd7db0252e-1729613974226/node_modules/baongoc-portfolio"
+    baongoc-portfolio "file:C:/Users/lengo/AppData/Local/Yarn/Cache/v6/npm-baongoc-portfolio-0.1.0-e0484c7c-3ed1-474f-be18-60b9ad38afe3-1730135698686/node_modules/baongoc-portfolio"
     class-variance-authority "^0.7.0"
     clsx "^2.1.1"
     eslint "8.46.0"
@@ -938,11 +938,14 @@ balanced-match@^1.0.0:
     react "^18.3.1"
     react-dom "^18.3.1"
     react-hot-toast "^2.4.1"
+    react-photo-album "^3.0.2"
     swiper "^11.1.14"
     tailwind-merge "^2.5.3"
     tailwindcss "3.3.3"
     tailwindcss-animate "^1.0.7"
     typescript "5.1.6"
+    usehooks-ts "^3.1.0"
+    yet-another-react-lightbox "^3.21.6"
 
 big-integer@^1.6.44:
   version "1.6.51"
@@ -2555,6 +2558,11 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
@@ -3053,6 +3061,11 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-photo-album@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-photo-album/-/react-photo-album-3.0.2.tgz#994644afe651cc8516ea15bfc2f054563568ba45"
+  integrity sha512-w3+8i6aj9l1jRfcubgVbAlBGSdtiXcqWdcwZcH4/Bavc+v7X7h+S3TkQ723pvDABjhaaxS168g9ECEBP6xnKrQ==
 
 react@^18.3.1:
   version "18.3.1"
@@ -3729,6 +3742,13 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+usehooks-ts@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-3.1.0.tgz#156119f36efc85f1b1952616c02580f140950eca"
+  integrity sha512-bBIa7yUyPhE1BCc0GmR96VU/15l/9gP1Ch5mYdLcFBaFGQsdmXkvjV0TtOqW1yUd6VjIwDunm+flSciCQXujiw==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
@@ -3841,6 +3861,11 @@ yaml@^2.1.1, yaml@^2.2.2:
   version "2.3.1"
   resolved "https://registry.npmjs.org/yaml/-/yaml-2.3.1.tgz"
   integrity sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==
+
+yet-another-react-lightbox@^3.21.6:
+  version "3.21.6"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-3.21.6.tgz#da37cf8be3401e810810fa06f30c0a1f32067bf1"
+  integrity sha512-uKcRmmezsj1Fbj38B6hFOGwbAu94fPr8d5H6I0+1FmcToX56freEGXXXtdA1oRo6036ug+UgrKZzzvsw/MIM/w==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

@@ -6,7 +6,7 @@ const TalentDance = () => {
   return (
     <div className="py-6">
       <h2 className="section-heading text-center">Dance</h2>
-      <p className="my-4 w-full max-w-[60vw] mx-auto">
+      <p className="my-4 w-full mx-auto">
         Although my passion for dance began with a simple &quot;yes&quot; to a friend’s
         invitation, it has evolved into a vital form of creative expression and community
         connection. Dance allows me to explore movement as a powerful language,

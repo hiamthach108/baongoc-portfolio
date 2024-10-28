@@ -17,6 +17,7 @@
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "baongoc-portfolio": "file:",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "eslint": "8.46.0",
@@ -27,12 +28,14 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
+    "react-photo-album": "^3.0.2",
     "swiper": "^11.1.14",
     "tailwind-merge": "^2.5.3",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
-    "baongoc-portfolio": "file:",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "usehooks-ts": "^3.1.0",
+    "yet-another-react-lightbox": "^3.21.6"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
