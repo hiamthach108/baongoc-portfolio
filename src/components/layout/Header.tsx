@@ -18,6 +18,8 @@ import { EMAIL, YOUTUBE } from '@/config/constants/social.const';
 
 import AnimSlide from '../features/animation/AnimSlide';
 
+import clsx from 'clsx';
+
 const NAV_LINKS = [
   {
     id: 'home',
@@ -36,30 +38,25 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full bg-bg sticky top-0 left-0 z-50">
-        <div className="hidden fluid-container md:flex items-center justify-between">
-          <div className="w-1/5 flex gap-2 items-center"></div>
-          <div className="w-3/5 text-center">
-            <h1 className="font-heading text-[40px] font-semibold">
-              tran minh bao ngoc
-            </h1>
-            <div className="flex items-center justify-center gap-5">
-              {NAV_LINKS.map((navLink) => (
-                <Link
-                  key={navLink.url}
-                  href={navLink.url}
-                  className="no-underline text-gray-800 mt-4 font-normal text-lg whitespace-nowrap"
-                >
-                  {navLink.name}
-
-                  {pathname === navLink.url && (
-                    <div className="h-[1px] w-full bg-black" />
-                  )}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="w-1/5 "></div>
+      <header className="w-full max-w-xs h-screen border-r border-solid border-gray-200 border-l-0 border-t-0 border-b-0 flex flex-col justify-between gap-10">
+        <h1 className="font-heading text-3xl font-semibold text-center pt-12">
+          {/* Tran Minh Bao Ngoc */}
+        </h1>
+        <div className="flex flex-col justify-center gap-5 text-left pl-12">
+          {NAV_LINKS.map((navLink) => (
+            <Link
+              key={navLink.url}
+              href={navLink.url}
+              className={clsx(
+                'no-underline mt-4 text-base whitespace-nowrap',
+                navLink.url === pathname
+                  ? 'font-bold text-black'
+                  : 'text-[#919191] font-normal',
+              )}
+            >
+              {navLink.name}
+            </Link>
+          ))}
         </div>
 
         <div className="flex justify-between md:hidden p-3">
@@ -77,8 +74,8 @@ const Header = () => {
             }}
           />
         </div>
-        <div className="absolute top-6 right-6 z-10 flex items-start justify-end gap-2 w-fit h-auto max-md:hidden ">
-          <Link href={`mailto:${EMAIL}`} target="_blank">
+        <div className="flex items-center gap-2 w-full h-auto max-md:hidden pb-12 pl-12">
+          {/* <Link href={`mailto:${EMAIL}`} target="_blank">
             <IconMailFilled
               size={28}
               className="cursor-pointer text-primary hover:text-bg-sky"
@@ -89,7 +86,7 @@ const Header = () => {
               size={28}
               className="cursor-pointer text-primary hover:text-bg-sky"
             />
-          </Link>
+          </Link> */}
         </div>
       </header>
 

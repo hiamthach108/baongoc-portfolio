@@ -6,12 +6,12 @@ import { EMAIL, PHONE } from '@/config/constants/social.const';
 
 const Footer = () => {
   return (
-    <footer className="text-center py-10 bg-gray-200">
-      <h1 className="font-heading text-3xl font-semibold">tran minh bao ngoc</h1>
-      <Link href={`mailto:${EMAIL}`} className=" text-primary my-2 block">
+    <footer className="text-center py-10 bg-white">
+      {/* <h1 className="font-heading text-3xl font-semibold">tran minh bao ngoc</h1> */}
+      {/* <Link href={`mailto:${EMAIL}`} className=" text-primary my-2 block">
         {EMAIL}
       </Link>
-      <p>{PHONE}</p>
+      <p>{PHONE}</p> */}
     </footer>
   );
 };

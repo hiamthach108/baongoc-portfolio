@@ -20,10 +20,12 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
-        'background': '#4f95f7',
+        'background': '#ffffff',
         'primary': '#4f95f7',
-        'bg': '#F1FAFB',
+        'bg': '#ffffff',
         'bg-sky': '#9DC6FF',
+        'text': '#1b1b1b',
+        'text-body': '#5e5e5e',
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],

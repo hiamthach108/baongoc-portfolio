@@ -5,10 +5,12 @@ import Header from './Header';
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="min-h-screen bg-bg w-full">
+    <main className="h-screen bg-bg w-full flex">
       <Header />
-      {children}
-      <Footer />
+      <div className="flex-1 min-h-screen overflow-y-auto">
+        {children}
+        <Footer />
+      </div>
     </main>
   );
 };

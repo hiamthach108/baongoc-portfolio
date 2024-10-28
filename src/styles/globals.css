@@ -5,12 +5,12 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @layer base {
   * {
-    @apply m-0 box-border scroll-smooth p-0 font-sans;
+    @apply m-0 box-border scroll-smooth p-0 font-sans text-text-body;
   }
   body {
     @apply bg-background;
@@ -26,14 +26,14 @@
     @apply container mx-auto w-full px-2 py-4 md:px-6 lg:px-16 lg:py-7;
   }
   .section-heading {
-    @apply text-left font-heading text-xl font-semibold uppercase md:text-[30px];
+    @apply font-heading text-2xl font-bold text-text;
   }
   .underline-after {
     @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1.3px] after:w-full after:bg-gray-700 after:content-[''];
   }
 
-  .section-heading-hand {
-    @apply font-hand text-7xl tracking-wider text-primary max-md:text-center max-[350px]:text-6xl lg:text-8xl;
+  .page-container {
+    @apply p-6;
   }
 }
 
