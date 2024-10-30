@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +19,10 @@
   ::selection {
     @apply bg-primary text-white;
   }
+
+  p {
+    @apply tracking-wide text-text-body;
+  }
 }
 
 @layer components {
@@ -26,7 +30,7 @@
     @apply container mx-auto w-full px-2 py-4 md:px-6 lg:px-16 lg:py-7;
   }
   .section-heading {
-    @apply font-heading text-2xl font-bold text-text;
+    @apply mb-6 font-heading text-xl font-medium tracking-wider text-text md:mb-12;
   }
   .underline-after {
     @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1.3px] after:w-full after:bg-gray-700 after:content-[''];
@@ -37,7 +41,7 @@
   }
 
   .content-container {
-    @apply px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-40;
+    @apply px-0 md:px-12 lg:px-24 xl:px-32 2xl:px-40;
   }
 }
 

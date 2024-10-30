@@ -20,13 +20,13 @@ const HomeHero = () => {
         <div className="z-20">
           <AnimText
             text="TRAN MINH BAO NGOC"
-            className="text-5xl text-center text-white  font-bold font-heading"
+            className="text-xl md:text-5xl text-center text-white tracking-widest font-black font-title"
           ></AnimText>
         </div>
       </div>
-      <div className="p-6">
+      <div className="px-6 md:px-10 py-32">
         <h3 className="text-center mt-6 mb-12 section-heading">About me</h3>
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col md:flex-row gap-6">
           <AnimFade direction="left" className="w-full md:w-1/3">
             <Image
               src="/baongoc2.JPG"
@@ -36,7 +36,7 @@ const HomeHero = () => {
               className="w-full h-auto"
             />
           </AnimFade>
-          <div className="flex-1 flex flex-col gap-3">
+          <div className="flex-1 flex flex-col gap-3 font-normal text-[15px] leading-5">
             <AnimFade direction="right">
               <p>
                 Hi! I’m Trần Minh Bảo Ngọc, a high school senior with an insatiable

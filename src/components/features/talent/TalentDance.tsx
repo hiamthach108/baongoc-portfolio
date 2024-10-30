@@ -8,8 +8,8 @@ const TalentDance = () => {
   return (
     <div className="py-6">
       <h2 className="section-heading text-center">Dance</h2>
-      <AnimFade direction="up">
-        <p className="my-4 w-full mx-auto max-md:text-sm">
+      <AnimFade direction="up" className="content-container">
+        <p className="my-4 w-full mx-auto text-sm">
           Although my passion for dance began with a simple &quot;yes&quot; to a friend’s
           invitation, it has evolved into a vital form of creative expression and
           community connection. Dance allows me to explore movement as a powerful
@@ -21,7 +21,7 @@ const TalentDance = () => {
           limits, using dance to inspire, engage, and build a vibrant artistic community.
         </p>
       </AnimFade>
-      <div className="-mx-6 mt-6">
+      <div className="-mx-6 mt-16">
         <ImgCarousel
           images={['/dance/1.PNG', '/dance/2.JPG', '/dance/3.JPG', '/dance/4.JPG']}
         />

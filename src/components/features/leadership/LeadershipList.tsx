@@ -9,11 +9,7 @@ import AnimFade from '../animation/AnimFade';
 
 const LeadershipList = () => {
   return (
-    <div className="py-10 flex flex-col gap-6">
-      <h1 className="font-heading font-black mb-6 text-center text-4xl text-text tracking-wider">
-        LEADERSHIP
-      </h1>
-
+    <div className="py-10 flex flex-col gap-20">
       <div className="px-6 md:px-12 flex gap-10 items-center flex-col md:flex-row">
         <AnimFade direction="left" className="w-3/4 md:w-1/3">
           <Image
@@ -30,7 +26,7 @@ const LeadershipList = () => {
             href={'https://www.facebook.com/profile.php?id=61561944069966'}
             className="flex items-center gap-1"
           >
-            <h4 className="section-heading">Magic Flora Medicinal Plant Club</h4>
+            <h4 className="section-heading mb-3">Magic Flora Medicinal Plant Club</h4>
           </Link>
           <p className="text-sm">
             A study on medicinal herbs: Health-improving medicines are usually closer than
@@ -64,7 +60,7 @@ const LeadershipList = () => {
         </AnimFade>
       </div>
 
-      <div className="px-6 md:px-12 flex flex-col gap-3">
+      <div className="px-6 md:px-12 flex flex-col gap-3 mt-10">
         <h4 className="section-heading text-center">Model United Nations</h4>
 
         <AnimFade direction="up" className="text-sm">
@@ -88,6 +84,33 @@ const LeadershipList = () => {
           science. In the lab, as in diplomacy, persistence and collaboration are key to
           solving real-world challenges, and I am committed to using these skills to push
           boundaries and create meaningful change.
+        </AnimFade>
+
+        <AnimFade direction="up" className="text-sm">
+          <span>Explore More:</span>
+          <div className="flex gap-4">
+            <Link
+              target="_blank"
+              href={'https://www.facebook.com/tomun2021?mibextid=AEUHqQ'}
+              className="font-medium text-primary"
+            >
+              Tran Dai Nghia
+            </Link>
+            <Link
+              target="_blank"
+              href={'https://www.facebook.com/yasmun.official'}
+              className="font-medium text-primary"
+            >
+              YAS
+            </Link>
+            <Link
+              target="_blank"
+              href={'https://www.facebook.com/simun2018'}
+              className="font-medium text-primary"
+            >
+              SIMUN
+            </Link>
+          </div>
         </AnimFade>
       </div>
       <ImgCarousel

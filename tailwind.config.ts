@@ -30,6 +30,7 @@ const config: Config = {
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
         heading: ['Mulish', 'sans-serif'],
+        title: ['Poppins', 'sans-serif'],
       },
     },
   },

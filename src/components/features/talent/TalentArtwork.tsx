@@ -124,8 +124,8 @@ const TalentArtwork = () => {
       <div className="py-6">
         <h2 className="section-heading text-center">Art Work</h2>
 
-        <AnimFade direction="right">
-          <p className="my-4 w-full mx-auto max-md:text-sm">
+        <AnimFade direction="right" className="content-container mb-10">
+          <p className=" my-4 w-full mx-auto text-sm">
             Art has always been my favorite way to express myself. I draw whatever sparks
             my curiosity, whether it’s the fascinating plants I discover during my deep
             dives into holistic medicine or the serene Vietnamese beaches from my
@@ -138,7 +138,7 @@ const TalentArtwork = () => {
           </p>
         </AnimFade>
 
-        <div className="w-full mt-6">
+        <div className="w-full">
           {/* <Gallery
           enableImageSelection={false}
           images={list.map((item) => ({

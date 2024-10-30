@@ -33,12 +33,17 @@ const ImgCarousel = ({ images }: Props) => {
     <div className="w-full relative">
       <Swiper
         ref={swiperRef}
-        slidesPerView={2}
+        slidesPerView={1.6}
         spaceBetween={6}
         loop={true}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
         }}
         centeredSlides={true}
         tabIndex={current}

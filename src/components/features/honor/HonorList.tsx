@@ -7,11 +7,9 @@ import ImgCarousel from '@/components/shared/ImgCarousel';
 const HonorList = () => {
   return (
     <div className="py-10 flex flex-col gap-6">
-      <h1 className="font-heading font-black text-center text-4xl text-text tracking-wider">
-        WICO
-      </h1>
+      <h1 className="section-heading text-center">WICO</h1>
 
-      <div className="content-container flex flex-col gap-4">
+      <div className="content-container flex flex-col gap-12">
         <Image
           src={'/honor/wico/poster.png'}
           alt="WICO"
@@ -20,7 +18,7 @@ const HonorList = () => {
           className="object-contain w-full h-auto"
         />
 
-        <div className="flex-1 flex flex-col gap-3 text-justify">
+        <div className="flex-1 flex flex-col gap-3 text-justify text-sm mb-10 px-6">
           <p>
             During the summer of 2024, I had the incredible opportunity to compete at the
             World Invention and Creativity Olympiad (WICO) in South Korea. Initially, I

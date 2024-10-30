@@ -38,7 +38,12 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full md:max-w-fit xl:max-w-xs h-screen border-r-0 md:border-r border-solid border-gray-200 border-l-0 border-t-0 border-b md:border-b-0 flex flex-col justify-between gap-10">
+      <header
+        className="w-full md:max-w-fit xl:max-w-xs h-screen border-r-0 md:border-r border-solid border-gray-200 border-l-0 border-t-0 border-b md:border-b-0 flex flex-col justify-between gap-10"
+        style={{
+          boxShadow: '0 0 4px 0px rgba(0, 0, 0, 0.2)',
+        }}
+      >
         <h1 className="max-md:hidden font-heading text-3xl font-semibold text-center pt-12">
           {/* Tran Minh Bao Ngoc */}
         </h1>
