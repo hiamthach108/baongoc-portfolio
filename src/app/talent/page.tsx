@@ -5,7 +5,7 @@ import TalentDance from '@/components/features/talent/TalentDance';
 
 const page = () => {
   return (
-    <div className="page-container">
+    <div className="page-container overflow-hidden">
       <TalentArtwork />
       <TalentDance />
     </div>

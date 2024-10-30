@@ -5,9 +5,14 @@ import Header from './Header';
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="h-screen bg-bg w-full flex">
+    <main className="h-screen bg-bg w-full flex flex-col md:flex-row">
       <Header />
-      <div className="flex-1 min-h-screen overflow-y-auto">
+      <div
+        className="flex-1 overflow-y-auto"
+        style={{
+          minHeight: 'calc(100vh - 4rem)',
+        }}
+      >
         {children}
         <Footer />
       </div>

@@ -38,11 +38,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full max-w-xs h-screen border-r border-solid border-gray-200 border-l-0 border-t-0 border-b-0 flex flex-col justify-between gap-10">
-        <h1 className="font-heading text-3xl font-semibold text-center pt-12">
+      <header className="w-full md:max-w-fit xl:max-w-xs h-screen border-r-0 md:border-r border-solid border-gray-200 border-l-0 border-t-0 border-b md:border-b-0 flex flex-col justify-between gap-10">
+        <h1 className="max-md:hidden font-heading text-3xl font-semibold text-center pt-12">
           {/* Tran Minh Bao Ngoc */}
         </h1>
-        <div className="flex flex-col justify-center gap-5 text-left pl-12">
+        <div className="max-md:hidden flex flex-col justify-center gap-4 text-left px-12">
           {NAV_LINKS.map((navLink) => (
             <Link
               key={navLink.url}
@@ -62,7 +62,7 @@ const Header = () => {
         <div className="flex justify-between md:hidden p-3">
           <Link href={'/'} className="no-underline">
             <h2 className="font-heading text-xl font-semibold  text-black">
-              tran minh bao ngoc
+              Tran Minh Bao Ngoc
             </h2>
           </Link>
 

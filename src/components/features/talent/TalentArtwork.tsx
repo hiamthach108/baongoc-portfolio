@@ -7,6 +7,8 @@ import React, { useState } from 'react';
 import { MasonryPhotoAlbum } from 'react-photo-album';
 import 'react-photo-album/masonry.css';
 
+import AnimFade from '../animation/AnimFade';
+
 type ImageArt = {
   id: number;
   name: string;
@@ -122,16 +124,19 @@ const TalentArtwork = () => {
       <div className="py-6">
         <h2 className="section-heading text-center">Art Work</h2>
 
-        <p className="my-4 w-full mx-auto">
-          Art has always been my favorite way to express myself. I draw whatever sparks my
-          curiosity, whether it’s the fascinating plants I discover during my deep dives
-          into holistic medicine or the serene Vietnamese beaches from my volunteer trips.
-          Each piece becomes a snapshot of the moments and subjects that captivate me.
-          <br />
-          Beyond aesthetics, my art reflects my love for exploration, blending the beauty
-          of nature with personal experiences, creating a visual journey of the world as I
-          see it.
-        </p>
+        <AnimFade direction="right">
+          <p className="my-4 w-full mx-auto max-md:text-sm">
+            Art has always been my favorite way to express myself. I draw whatever sparks
+            my curiosity, whether it’s the fascinating plants I discover during my deep
+            dives into holistic medicine or the serene Vietnamese beaches from my
+            volunteer trips. Each piece becomes a snapshot of the moments and subjects
+            that captivate me.
+            <br />
+            Beyond aesthetics, my art reflects my love for exploration, blending the
+            beauty of nature with personal experiences, creating a visual journey of the
+            world as I see it.
+          </p>
+        </AnimFade>
 
         <div className="w-full mt-6">
           {/* <Gallery
@@ -175,8 +180,8 @@ const TalentArtwork = () => {
             setSelectedImage(null);
           }}
         >
-          <div className="relative bg-white flex w-fit max-w-[60vw] h-[60vh]">
-            <div className="h-full w-fit">
+          <div className="relative bg-white flex flex-col md:flex-row max-md:overflow-y-auto w-fit mdmax-w-[60vw] h-[60vh]">
+            <div className="h-full w-full md:w-fit max-md:max-h-[80%] text-center bg-sky-100">
               <Image
                 src={selectedImage.image}
                 alt={selectedImage.name}

@@ -62,13 +62,13 @@ const ImgCarousel = ({ images }: Props) => {
         ))}
 
         <div
-          className="max-md:hidden absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-70 aspect-square px-1 py-2 flex items-center justify-center cursor-pointer"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-70 aspect-square px-1 py-2 flex items-center justify-center cursor-pointer"
           onClick={handlePrevSlide}
         >
           <IconChevronLeft size={24} color="white" className="text-white" />
         </div>
         <div
-          className="max-md:hidden absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-70 aspect-square px-1 py-2 flex items-center justify-center cursor-pointer"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-70 aspect-square px-1 py-2 flex items-center justify-center cursor-pointer"
           onClick={handleNextSlide}
         >
           <IconChevronRight size={24} color="white" className="text-white" />
