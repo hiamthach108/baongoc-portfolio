@@ -136,6 +136,53 @@ const LeadershipList = () => {
           leadership.
         </p>
       </div> */}
+
+      <div className="px-6 md:px-12 flex flex-col gap-3 mt-10">
+        <h4 className="section-heading text-center">Blue Legacy</h4>
+
+        <AnimFade direction="up" className="text-sm">
+          Volunteering with Blue Legacy taught me invaluable lessons in leadership,
+          organization, and community engagement. Coordinating beach cleanups in areas
+          like Cần Giờ Island required meticulous planning—such as securing permits,
+          arranging transportation for over 100 volunteers, and ensuring proper waste
+          disposal. When unexpected rain threatened one of our cleanups in Bình Thuận, I
+          quickly reorganized the schedule and communicated new plans to the team,
+          ensuring we met our goals despite the challenge.
+        </AnimFade>
+
+        <AnimFade direction="up" className="text-sm">
+          Managing large groups of volunteers also honed my teamwork skills, as I
+          delegated tasks and facilitated group problem-solving during mural painting
+          projects in Phước Hải. Interacting directly with local communities, especially
+          during our recycling event for elementary students, showed me how small
+          actions—like showcasing recycled goods—can spark broader conversations about
+          sustainability. These experiences strengthened my leadership and reinforced my
+          belief in the power of collective action to drive meaningful change.
+        </AnimFade>
+
+        <AnimFade direction="up" className="text-sm">
+          <span>Explore More</span>
+          <div className="flex gap-4">
+            <Link
+              target="_blank"
+              href={'https://www.facebook.com/profile.php?id=61562542580964'}
+              className="font-medium text-primary"
+            >
+              Fanpage
+            </Link>
+          </div>
+        </AnimFade>
+      </div>
+      <ImgCarousel
+        images={[
+          '/leadership/blue-legacy/1.jpeg',
+          '/leadership/blue-legacy/2.jpeg',
+          '/leadership/blue-legacy/3.jpeg',
+          '/leadership/blue-legacy/4.jpeg',
+          '/leadership/blue-legacy/5.webp',
+          '/leadership/blue-legacy/6.webp',
+        ]}
+      />
     </div>
   );
 };
