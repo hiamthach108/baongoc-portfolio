@@ -7,12 +7,12 @@ import ImgCarousel from '@/components/shared/ImgCarousel';
 const HonorList = () => {
   return (
     <div className="py-10 flex flex-col gap-6">
-      <h1 className="section-heading text-center">WICO</h1>
+      <h1 className="section-heading text-center">World Invention Creativity Olympic</h1>
 
       <div className="content-container flex flex-col gap-12">
         <Image
           src={'/honor/wico/poster.png'}
-          alt="WICO"
+          alt="World Invention Creativity Olympic"
           width={1000}
           height={1200}
           className="object-contain w-full h-auto"
